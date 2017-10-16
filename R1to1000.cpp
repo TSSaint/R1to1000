@@ -32,5 +32,12 @@ void randGame()
 		// continues untill user gets the right number
 		while (!isRight ( guess, answer ) )
 			cin >> guess;
-	}
-}
+
+		// asks user if they want to play again
+		cout << "\nLooks like you got it!\n"
+			 << "Play again (y or n)? ";
+		cin  >> response;
+
+		cout << endl;
+	} while ( response == 'y' );
+} // end func randGame
