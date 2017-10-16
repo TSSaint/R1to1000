@@ -18,7 +18,15 @@ void randGame()
 	char response; // prompty 'y' or 'n' to continue
 
 	// user loop that runs until user quits w/ 'n'
-	do {
+	do
+	{
+		// generates the correct answer
+		answer = 1 + rand() % 1000;
 
+		// console output/user prompt
+		cout << "Here is a number between 1 & 1000!\n"
+			 << "Try and guess what number it is.\n"
+			 << "Please type a number. " << endl << "? ";
+		cin >> guess;
 	}
 }
