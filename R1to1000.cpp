@@ -41,3 +41,18 @@ void randGame()
 		cout << endl;
 	} while ( response == 'y' );
 } // end func randGame
+
+bool isRight ( int guess, int answer )
+{
+	if ( guess == answer )
+	   return true;
+
+	// help the user with a hint
+	// checks if the guess is less than
+	// the generated answer and prints a hint accordingly
+	if ( guess < answer )
+	   cout << "Too low. Guess again.\n? ";
+	else
+	   cout << "Too high. Guess again.\n? ";
+	return false;
+} // end func isRight
