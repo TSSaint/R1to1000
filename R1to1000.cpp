@@ -28,5 +28,9 @@ void randGame()
 			 << "Try and guess what number it is.\n"
 			 << "Please type a number. " << endl << "? ";
 		cin >> guess;
+
+		// continues untill user gets the right number
+		while (!isRight ( guess, answer ) )
+			cin >> guess;
 	}
 }
